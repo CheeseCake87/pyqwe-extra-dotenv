@@ -11,9 +11,13 @@ requires-python = ">=3.11"
 license = { file = "LICENSE" }
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version"]
+dependencies = [
+    "python-dotenv"
+]
 
 [project.urls]
 Source = "https://github.com/CheeseCake87/pyqwe"
 
-[project.dependencies]
-python-dotenv = ">=1.0.1"
+[tool.pyqwe]
+build = "*shell:flit build"
+publish = "*shell:export FLIT_USERNAME=__token__ && flit publish"
