@@ -7,7 +7,7 @@ name = "pyqwe-extra-dotenv"
 description = 'A package that provides python-dotenv functionality for pyqwe. This package can only be used with pyqwe.'
 authors = [{ name = "David Carmichael", email = "david@uilix.com" }]
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 license = { file = "LICENSE" }
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version"]
